@@ -20,12 +20,7 @@ type User {
   chat: Chat
   ridesAsPassenger: [Ride]
   ridesAsDriver: [Ride]
-
   messages: [Message]
   createdAt: String!
   updatedAt: String
-}
-
-type Query {
-  user: User
 }

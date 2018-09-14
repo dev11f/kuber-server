@@ -1,0 +1,9 @@
+type RequestEmailVarificationResponse {
+  ok: Boolean!
+  error: String
+}
+
+# 왜 arguments가 없냐면 유저 token으로부터 email 얻을거라서
+type Mutation {
+  RequestEmailVarification: RequestEmailVarificationResponse!
+}

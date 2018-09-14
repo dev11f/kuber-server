@@ -1,0 +1,9 @@
+type CompleteEmailVerificationResponse {
+  ok: Boolean!
+  error: String
+}
+
+# email은 token에서 얻을 것
+type Mutation {
+  CompleteEmailVerification(key: String!): CompleteEmailVerificationResponse!
+}
